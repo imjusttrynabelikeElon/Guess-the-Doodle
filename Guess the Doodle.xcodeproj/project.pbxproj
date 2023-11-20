@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C944DEA52B0ADDA8006C3E51 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944DEA42B0ADDA8006C3E51 /* GameOverView.swift */; };
+		C944DEA72B0BBF05006C3E51 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944DEA62B0BBF05006C3E51 /* GameView.swift */; };
+		C944DEA92B0BC271006C3E51 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944DEA82B0BC271006C3E51 /* DrawingView.swift */; };
+		C94C4E032B0A94A2007DE91C /* Guess_the_DoodleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4E022B0A94A2007DE91C /* Guess_the_DoodleApp.swift */; };
+		C94C4E052B0A94A2007DE91C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4E042B0A94A2007DE91C /* ContentView.swift */; };
+		C94C4E072B0A94A3007DE91C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94C4E062B0A94A3007DE91C /* Assets.xcassets */; };
+		C94C4E0A2B0A94A3007DE91C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94C4E092B0A94A3007DE91C /* Preview Assets.xcassets */; };
+		C94C4E112B0AA003007DE91C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4E102B0AA003007DE91C /* MenuView.swift */; };
+		C94C4E132B0AA017007DE91C /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4E122B0AA017007DE91C /* MatchManager.swift */; };
+		C94C4E152B0AA023007DE91C /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4E142B0AA023007DE91C /* Misc.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C944DEA42B0ADDA8006C3E51 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		C944DEA62B0BBF05006C3E51 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		C944DEA82B0BC271006C3E51 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		C94C4DFF2B0A94A2007DE91C /* Guess the Doodle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess the Doodle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94C4E022B0A94A2007DE91C /* Guess_the_DoodleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_the_DoodleApp.swift; sourceTree = "<group>"; };
+		C94C4E042B0A94A2007DE91C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C94C4E062B0A94A3007DE91C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C94C4E092B0A94A3007DE91C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C94C4E102B0AA003007DE91C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		C94C4E122B0AA017007DE91C /* MatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
+		C94C4E142B0AA023007DE91C /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C94C4DFC2B0A94A2007DE91C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C94C4DF62B0A94A2007DE91C = {
+			isa = PBXGroup;
+			children = (
+				C94C4E012B0A94A2007DE91C /* Guess the Doodle */,
+				C94C4E002B0A94A2007DE91C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C94C4E002B0A94A2007DE91C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C94C4DFF2B0A94A2007DE91C /* Guess the Doodle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C94C4E012B0A94A2007DE91C /* Guess the Doodle */ = {
+			isa = PBXGroup;
+			children = (
+				C94C4E022B0A94A2007DE91C /* Guess_the_DoodleApp.swift */,
+				C94C4E122B0AA017007DE91C /* MatchManager.swift */,
+				C94C4E142B0AA023007DE91C /* Misc.swift */,
+				C94C4E042B0A94A2007DE91C /* ContentView.swift */,
+				C944DEA42B0ADDA8006C3E51 /* GameOverView.swift */,
+				C94C4E062B0A94A3007DE91C /* Assets.xcassets */,
+				C94C4E082B0A94A3007DE91C /* Preview Content */,
+				C94C4E102B0AA003007DE91C /* MenuView.swift */,
+				C944DEA62B0BBF05006C3E51 /* GameView.swift */,
+				C944DEA82B0BC271006C3E51 /* DrawingView.swift */,
+			);
+			path = "Guess the Doodle";
+			sourceTree = "<group>";
+		};
+		C94C4E082B0A94A3007DE91C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C94C4E092B0A94A3007DE91C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C94C4DFE2B0A94A2007DE91C /* Guess the Doodle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C94C4E0D2B0A94A3007DE91C /* Build configuration list for PBXNativeTarget "Guess the Doodle" */;
+			buildPhases = (
+				C94C4DFB2B0A94A2007DE91C /* Sources */,
+				C94C4DFC2B0A94A2007DE91C /* Frameworks */,
+				C94C4DFD2B0A94A2007DE91C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guess the Doodle";
+			productName = "Guess the Doodle";
+			productReference = C94C4DFF2B0A94A2007DE91C /* Guess the Doodle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C94C4DF72B0A94A2007DE91C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C94C4DFE2B0A94A2007DE91C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C94C4DFA2B0A94A2007DE91C /* Build configuration list for PBXProject "Guess the Doodle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C94C4DF62B0A94A2007DE91C;
+			productRefGroup = C94C4E002B0A94A2007DE91C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C94C4DFE2B0A94A2007DE91C /* Guess the Doodle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C94C4DFD2B0A94A2007DE91C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94C4E0A2B0A94A3007DE91C /* Preview Assets.xcassets in Resources */,
+				C94C4E072B0A94A3007DE91C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C94C4DFB2B0A94A2007DE91C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C94C4E052B0A94A2007DE91C /* ContentView.swift in Sources */,
+				C94C4E132B0AA017007DE91C /* MatchManager.swift in Sources */,
+				C94C4E112B0AA003007DE91C /* MenuView.swift in Sources */,
+				C944DEA92B0BC271006C3E51 /* DrawingView.swift in Sources */,
+				C94C4E152B0AA023007DE91C /* Misc.swift in Sources */,
+				C944DEA52B0ADDA8006C3E51 /* GameOverView.swift in Sources */,
+				C94C4E032B0A94A2007DE91C /* Guess_the_DoodleApp.swift in Sources */,
+				C944DEA72B0BBF05006C3E51 /* GameView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C94C4E0B2B0A94A3007DE91C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C94C4E0C2B0A94A3007DE91C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C94C4E0E2B0A94A3007DE91C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Guess the Doodle/Preview Content\"";
+				DEVELOPMENT_TEAM = A3M4AFU3DN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "G.O.D.Guess-the-Doodle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C94C4E0F2B0A94A3007DE91C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Guess the Doodle/Preview Content\"";
+				DEVELOPMENT_TEAM = A3M4AFU3DN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "G.O.D.Guess-the-Doodle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C94C4DFA2B0A94A2007DE91C /* Build configuration list for PBXProject "Guess the Doodle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94C4E0B2B0A94A3007DE91C /* Debug */,
+				C94C4E0C2B0A94A3007DE91C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C94C4E0D2B0A94A3007DE91C /* Build configuration list for PBXNativeTarget "Guess the Doodle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94C4E0E2B0A94A3007DE91C /* Debug */,
+				C94C4E0F2B0A94A3007DE91C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C94C4DF72B0A94A2007DE91C /* Project object */;
+}

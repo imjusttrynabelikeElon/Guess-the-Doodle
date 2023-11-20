@@ -26,7 +26,7 @@ struct DrawingView: UIViewRepresentable {
         }
     
     var canvasView = PKCanvasView()
-    
+    //
     @ObservedObject var matchManager: MatchManager
     @Binding var eraserEnabled: Bool
     

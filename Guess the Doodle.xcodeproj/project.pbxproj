@@ -17,6 +17,8 @@
 		C94C4E112B0AA003007DE91C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4E102B0AA003007DE91C /* MenuView.swift */; };
 		C94C4E132B0AA017007DE91C /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4E122B0AA017007DE91C /* MatchManager.swift */; };
 		C94C4E152B0AA023007DE91C /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C4E142B0AA023007DE91C /* Misc.swift */; };
+		C9AEC0B02B0D6B3B00742FB5 /* MatchManager+GKMAtchMakingVCDEL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AEC0AF2B0D6B3B00742FB5 /* MatchManager+GKMAtchMakingVCDEL.swift */; };
+		C9AEC0B22B0D6D1A00742FB5 /* MatchManager+GKMathDel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AEC0B12B0D6D1A00742FB5 /* MatchManager+GKMathDel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		C94C4E102B0AA003007DE91C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		C94C4E122B0AA017007DE91C /* MatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
 		C94C4E142B0AA023007DE91C /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		C9AEC0AF2B0D6B3B00742FB5 /* MatchManager+GKMAtchMakingVCDEL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchManager+GKMAtchMakingVCDEL.swift"; sourceTree = "<group>"; };
+		C9AEC0B12B0D6D1A00742FB5 /* MatchManager+GKMathDel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MatchManager+GKMathDel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				C94C4E022B0A94A2007DE91C /* Guess_the_DoodleApp.swift */,
+				C9AEC0AF2B0D6B3B00742FB5 /* MatchManager+GKMAtchMakingVCDEL.swift */,
 				C94C4E122B0AA017007DE91C /* MatchManager.swift */,
 				C94C4E142B0AA023007DE91C /* Misc.swift */,
 				C94C4E042B0A94A2007DE91C /* ContentView.swift */,
@@ -73,6 +78,7 @@
 				C94C4E102B0AA003007DE91C /* MenuView.swift */,
 				C944DEA62B0BBF05006C3E51 /* GameView.swift */,
 				C944DEA82B0BC271006C3E51 /* DrawingView.swift */,
+				C9AEC0B12B0D6D1A00742FB5 /* MatchManager+GKMathDel.swift */,
 			);
 			path = "Guess the Doodle";
 			sourceTree = "<group>";
@@ -157,8 +163,10 @@
 			files = (
 				C94C4E052B0A94A2007DE91C /* ContentView.swift in Sources */,
 				C94C4E132B0AA017007DE91C /* MatchManager.swift in Sources */,
+				C9AEC0B02B0D6B3B00742FB5 /* MatchManager+GKMAtchMakingVCDEL.swift in Sources */,
 				C94C4E112B0AA003007DE91C /* MenuView.swift in Sources */,
 				C944DEA92B0BC271006C3E51 /* DrawingView.swift in Sources */,
+				C9AEC0B22B0D6D1A00742FB5 /* MatchManager+GKMathDel.swift in Sources */,
 				C94C4E152B0AA023007DE91C /* Misc.swift in Sources */,
 				C944DEA52B0ADDA8006C3E51 /* GameOverView.swift in Sources */,
 				C94C4E032B0A94A2007DE91C /* Guess_the_DoodleApp.swift in Sources */,

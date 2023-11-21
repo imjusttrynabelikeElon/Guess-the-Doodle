@@ -13,7 +13,7 @@ struct Guess_the_DoodleApp: App {
         WindowGroup {
             
             
-            GameView(matchManager: MatchManager())
+           ContentView()
         }
     }
 }

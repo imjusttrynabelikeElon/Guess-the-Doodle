@@ -30,7 +30,7 @@ struct MenuView: View {
             Spacer()
             
             Button {
-                // todo:Go back to menu
+                matchManager.startMatchMaking()
             } label: {
                 Text("Menu")
                     .foregroundColor(Color("menuBtn"))

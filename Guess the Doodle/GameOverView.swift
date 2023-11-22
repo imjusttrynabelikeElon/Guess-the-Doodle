@@ -22,7 +22,7 @@ struct GameOverView: View {
             Spacer()
    //
             Button {
-                // todo: Start matchmaking menu
+                matchManager.resetGame()
             } label: {
                 Text("PLAY")
                     .foregroundColor(.white)

@@ -18,7 +18,11 @@ struct GameView: View {
     @State var eraserEnabled = false
     
     func makeGuess() {
-        // TODO: Submit the guess
+       
+        
+        guard drawingGuess != "" else { return }
+        matchManager.sendString("guess:\(drawingGuess)")
+        drawingGuess = ""
     }
     var body: some View {
         ZStack {
@@ -92,7 +96,8 @@ struct GameView: View {
         ZStack {
             HStack {
                 Button {
-                    // TODO: Disconnect from Game
+                    matchManager.match?.disconnect()
+                    matchManager.resetGame()
                 } label: {
                     Image(systemName: "arrowshape.turn.up.left.circle.fill")
                         .font(.largeTitle)
@@ -108,6 +113,11 @@ struct GameView: View {
                     .foregroundColor(Color(matchManager.currentlyDrawing ? "primaryYellow" : "primaryPurple"))
 
             }
+            
+            Text("Score: \(matchManager.score)")
+                .bold()
+                .font(.title)
+                .foregroundColor(Color(matchManager.currentlyDrawing ? "pimaryYellow" : "primaryPurple"))
         }
         .padding(.vertical, 15)
     }

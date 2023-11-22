@@ -43,7 +43,23 @@ extension MatchManager: GKMatchDelegate {
     }
     
     
+    
+    
+   
+    
+    
+    
+    
     func match(_ match: GKMatch, player: GKPlayer, didChange state: GKPlayerConnectionState) {
+        guard state == .disconnected && !isGameOver else { return }
+        let alert = UIAlertController(title: "PLayer disconnected", message: "The other player has disconnected from the game.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+            self.match?.disconnect()
+        })
         
+        DispatchQueue.main.async {
+            self.resetGame()
+            self.rootVC?.present(alert, animated: true)
+        }
     }
 }

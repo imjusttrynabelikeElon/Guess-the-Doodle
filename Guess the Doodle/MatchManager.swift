@@ -25,7 +25,12 @@ class MatchManager: NSObject, ObservableObject {
     @Published var pastGuesses = [PastGuess]()
     
     @Published var score = 0
-    @Published var remainingTime = maxTimeRemaining
+    @Published var remainingTime = maxTimeRemaining {
+        willSet {
+            if isTimeKeeper { sendString("timer:\(newValue)") }
+                                         if newValue < 0 {gameOver() }
+        }
+    }
     @Published var lastReceivedDrawing = PKDrawing()
     
     
@@ -90,6 +95,36 @@ class MatchManager: NSObject, ObservableObject {
         sendString("began:\(playerUUIDKey)")
     }
     
+    func swapRoles() {
+        score += 1
+        currentlyDrawing = !currentlyDrawing
+        drawPrompt = everydayObjects.randomElement()!
+    }
+    
+    func gameOver() {
+        isGameOver = true
+        match?.disconnect()
+    }
+    
+    func resetGame() {
+        DispatchQueue.main.async { [self] in
+            isGameOver = false
+            inGame = false
+            drawPrompt = ""
+            score = 0
+            remainingTime = maxTimeRemaining
+            lastReceivedDrawing = PKDrawing()
+            
+        }
+        
+        isTimeKeeper = false
+        match?.delegate = nil
+        match = nil
+        otherPlayer = nil
+        pastGuesses.removeAll()
+        playerUUIDKey = UUID().uuidString
+    }
+    
     func receivedString(_ message: String) {
         let messageSplit = message.split(separator: ":")
         guard let messagePrefix = messageSplit.first else { return }
@@ -105,14 +140,37 @@ class MatchManager: NSObject, ObservableObject {
             }
             currentlyDrawing = playerUUIDKey < parmeter
             inGame = true
-            isTimeKeeper = true
+            isTimeKeeper = currentlyDrawing
             
             if isTimeKeeper {
                 countDownTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
             }
+        case "guess":
+            var guessCorrect = false
+            
+            if parmeter.lowercased() == drawPrompt {
+                sendString("correct:\(parmeter)")
+                swapRoles()
+                guessCorrect = true
+            } else {
+                sendString("incorrect:\(parmeter)")
+            }
+            
+            appendPastGuess(guess: parmeter, correct: guessCorrect)
+        case "correct":
+            swapRoles()
+            appendPastGuess(guess: parmeter, correct: true)
+        case "incorrect":
+            appendPastGuess(guess: parmeter, correct: false)
+        case "timer:":
+            remainingTime = Int(parmeter) ?? 0
         default:
             break
         }
+    }
+    
+    func appendPastGuess(guess: String, correct: Bool) {
+        pastGuesses.append(PastGuess(message: "\(guess)\(correct ? " was correct!" : "")", correct: correct))
     }
 }

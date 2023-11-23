@@ -7,6 +7,9 @@
 
 import SwiftUI
 //
+
+
+
 struct MenuView: View {
     
     
@@ -16,11 +19,12 @@ struct MenuView: View {
     var body: some View {
         VStack {
            Spacer()
-            Image("gameOver")
-                .resizable()
-                .scaledToFit()
-                .padding(.horizontal, 70)
-                .padding(.vertical)
+            
+            Text("GUESS THE DOODLE!")
+                           .font(.title)
+                           .fontWeight(.bold)
+                           .foregroundColor(Color.white)
+             Spacer()
             
             Text("Score \(matchManager.score)")
                 .font(.largeTitle)

@@ -20,7 +20,7 @@ class MatchManager: NSObject, ObservableObject {
     @Published var isGameOver = false
     
     
-    @Published var currentlyDrawing = false
+    @Published var currentlyDrawing = true
     @Published var drawPrompt = ""
     @Published var pastGuesses = [PastGuess]()
     

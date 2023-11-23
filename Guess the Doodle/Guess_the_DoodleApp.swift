@@ -13,7 +13,10 @@ struct Guess_the_DoodleApp: App {
         WindowGroup {
             
             
-           ContentView()
+            
+            
+            
+        ContentView()
         }
     }
 }

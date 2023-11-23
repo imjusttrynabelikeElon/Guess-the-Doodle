@@ -14,10 +14,11 @@ struct GameOverView: View {
     var body: some View {
         VStack {
            Spacer()
-            Image("gtd")
-                .resizable()
-                .scaledToFit()
-                .padding(30)
+            Text("GAME OVER!")
+                           .font(.title)
+                           .fontWeight(.bold)
+                           .foregroundColor(Color.white)
+           
             
             Spacer()
    //
